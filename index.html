@@ -2,130 +2,110 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>MT3</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: #00091B;
+            color: #fff;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                top: 20%;
+                opacity: 0;
+            }
+            to {
+                top: 100;
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                top: 20%;
+                opacity: 0;
+            }
+            to {
+                top: 100;
+                opacity: 1;
+            }
+        }
+        
+        .wrapper {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            animation: fadeIn 1000ms ease;
+            -webkit-animation: fadeIn 1000ms ease;
+        }
+        
+        h1 {
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0;
+            line-height: 1;
+            font-weight: 700;
+        }
+        
+        .dot {
+            color: #4FEBFE;
+        }
+        
+        p {
+            text-align: center;
+            margin: 18px;
+            font-family: 'Muli', sans-serif;
+            font-weight: normal;
+        }
+        
+        .icons {
+            text-align: center;
+        }
+        
+        .icons i {
+            color: #00091B;
+            background: #fff;
+            height: 15px;
+            width: 15px;
+            padding: 13px;
+            margin: 0 10px;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            transition: all 200ms ease;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .icons i:hover,
+        .icons i:active {
+            color: #fff;
+            background: none;
+            cursor: pointer !important;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            text-decoration: none;
+        }
+        
+        @media(max-width:580px) {
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-    <div class="mt3-nav-banner pb-5">
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="javascript:void(0)">
-                    <img src="assets/images/logo.png" class="mt3-logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-                <div class="mt3-navbar collapse navbar-collapse  align-items-end" id="mynavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="javascript:void(0)">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Download App</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Contact us</a>
-                        </li>
-                    </ul>
+    <div class="wrapper">
+        <div align="center"><img src="logo.png" width="60"></div>
+        <h1>coming soon<span class="dot">.</span></h1>
 
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-6 mt3-banner-content mt-5">
-                    <h3>Lorem ipsum<br> dolor sit amet</h3>
-                    <h5>consectetur adipiscing elit</h5>
-                    <div class="mt3-download-button mb-5">
-                        <a href="#" class="mt3-googleplay-btn"><img src="assets/images/GoogleplayButton.png"></a>
-                        <a href="#" class="mt3-appstore-btn"><img src="assets/images/AppStoreButton.png"></a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-6">
-                    <div class="mt3-bg-container">
-                        <div class="mt3-main-bg">
-                            <img class="mt3-img-main img-fluid" src="assets/images/Mobile.png">
 
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
-
-    <div class="container text-center mt-5 mt3-about-content">
-        <h1>Multiverse Tunnel 3</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan porttitor dui, quis congue enim porta at. Nullam in laoreet libero. Quisque sapien arcu, semper non scelerisque in, semper sit amet nibh. Aenean consectetur, lacus cursus
-            convallis laoreet, lacus massa tincidunt ipsum, sed tristique arcu dolor eu neque. Vivamus tempus ornare metus vitae porta. </p>
-        <div class="mt-4"> <a href="#" class="mt3-download-btn"> Download App </a></div>
-    </div>
-    <div class="container mt3-catog-section">
-        <div class="row">
-            <h3 class="mt3-catog-title">Categories</h3>
-            <div class="col-lg-4">
-                <div class="mt3-catog">
-                    <img src="assets/images/c1.jpg" class="img-fluid">
-                    <h3>Lorem ipsum dolor</h3>
-                    <h6>consectetur adipiscing</h6>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="mt3-catog">
-                    <img src="assets/images/c1.jpg" class="img-fluid">
-                    <h3>Lorem ipsum dolor</h3>
-                    <h6>consectetur adipiscing</h6>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="mt3-catog">
-                    <img src="assets/images/c1.jpg" class="img-fluid">
-                    <h3>Lorem ipsum dolor</h3>
-                    <h6>consectetur adipiscing</h6>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <footer class="mt3-footer">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div align="center"><img src="assets/images/logo.png" class="mt3-footer-logo"></div>
-                    <div class="mt3-footer-ab">
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="mt3-footer-section">
-                        <h2>Contact Us</h2>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan porttitor dui, quis congue enim porta at.</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="mt3-footer-section">
-                        <h2>Legal</h2>
-                        <ul>
-                            <li>Terms & conditions</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>
